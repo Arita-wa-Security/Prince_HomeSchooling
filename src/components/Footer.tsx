@@ -9,31 +9,31 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-foreground text-background py-16">
+    <footer className="bg-foreground text-background py-20">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
           {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
-                <span className="text-2xl text-primary-foreground font-bold">B</span>
+          <div className="space-y-6">
+            <div className="flex items-center space-x-3">
+              <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-soft">
+                <span className="text-2xl text-primary-foreground font-display font-bold">B</span>
               </div>
-              <span className="text-xl font-bold">BrightPath Homeschool</span>
+              <span className="font-display text-2xl font-bold">BrightPath</span>
             </div>
-            <p className="text-background/80 leading-relaxed">
+            <p className="text-background/70 leading-relaxed text-lg">
               Empowering families to create joyful, personalized learning experiences at home.
             </p>
             <div className="flex gap-4 pt-4">
-              <a href="#" className="w-10 h-10 bg-background/10 hover:bg-primary rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="w-10 h-10 bg-background/10 hover:bg-primary rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="w-10 h-10 bg-background/10 hover:bg-primary rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="w-10 h-10 bg-background/10 hover:bg-primary rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
                 <Youtube size={20} />
               </a>
             </div>
@@ -41,12 +41,12 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Quick Links</h4>
-            <ul className="space-y-3">
+            <h4 className="font-bold text-xl mb-6">Quick Links</h4>
+            <ul className="space-y-4">
               <li>
                 <button
                   onClick={() => scrollToSection("home")}
-                  className="text-background/80 hover:text-primary transition-colors"
+                  className="text-background/70 hover:text-primary transition-colors text-lg"
                 >
                   Home
                 </button>
@@ -54,7 +54,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("about")}
-                  className="text-background/80 hover:text-primary transition-colors"
+                  className="text-background/70 hover:text-primary transition-colors text-lg"
                 >
                   About Us
                 </button>
@@ -62,7 +62,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("programs")}
-                  className="text-background/80 hover:text-primary transition-colors"
+                  className="text-background/70 hover:text-primary transition-colors text-lg"
                 >
                   Programs
                 </button>
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("testimonials")}
-                  className="text-background/80 hover:text-primary transition-colors"
+                  className="text-background/70 hover:text-primary transition-colors text-lg"
                 >
                   Testimonials
                 </button>
@@ -80,21 +80,21 @@ const Footer = () => {
 
           {/* Programs */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Our Programs</h4>
-            <ul className="space-y-3">
-              <li className="text-background/80">Early Learning (5-7)</li>
-              <li className="text-background/80">Elementary Years (8-11)</li>
-              <li className="text-background/80">Middle School (12-14)</li>
-              <li className="text-background/80">Custom Programs</li>
+            <h4 className="font-bold text-xl mb-6">Our Programs</h4>
+            <ul className="space-y-4 text-lg">
+              <li className="text-background/70">Early Learning (5-7)</li>
+              <li className="text-background/70">Elementary Years (8-11)</li>
+              <li className="text-background/70">Middle School (12-14)</li>
+              <li className="text-background/70">Custom Programs</li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Contact Info</h4>
-            <ul className="space-y-3 text-background/80">
-              <li className="flex items-center gap-2">
-                <Mail size={16} className="flex-shrink-0" />
+            <h4 className="font-bold text-xl mb-6">Contact Info</h4>
+            <ul className="space-y-4 text-background/70 text-lg">
+              <li className="flex items-center gap-3">
+                <Mail size={18} className="flex-shrink-0" />
                 <span>hello@brightpathhomeschool.com</span>
               </li>
               <li>(555) 123-4567</li>
@@ -107,12 +107,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-background/20">
+        <div className="pt-12 border-t border-background/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-background/60 text-sm">
+            <p className="text-background/60">
               © {new Date().getFullYear()} BrightPath Homeschool. All rights reserved.
             </p>
-            <div className="flex gap-6 text-sm">
+            <div className="flex gap-8">
               <a href="#" className="text-background/60 hover:text-primary transition-colors">
                 Privacy Policy
               </a>

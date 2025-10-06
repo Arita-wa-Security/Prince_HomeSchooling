@@ -47,30 +47,31 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-24 bg-muted">
+    <section id="testimonials" className="py-32 bg-muted relative">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <div className="inline-block bg-secondary/20 text-secondary-foreground px-4 py-2 rounded-full font-semibold mb-4">
+        <div className="text-center mb-20">
+          <div className="inline-block bg-secondary/20 text-secondary-foreground px-5 py-2.5 rounded-full font-semibold mb-6 text-sm">
             Testimonials
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Stories From Our{" "}
-            <span className="text-gradient-warm">Community</span>
+          <h2 className="font-display text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+            Stories From Our
+            <br />
+            <span className="text-gradient-warm italic">Community</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Hear from parents who have discovered the joy of homeschooling with BrightPath.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-card rounded-3xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 border border-border relative"
+              className="bg-card rounded-[1.5rem] p-10 shadow-soft hover:shadow-medium transition-all duration-300 relative"
             >
-              <Quote className="absolute top-6 right-6 text-primary/20" size={40} />
+              <Quote className="absolute top-8 right-8 text-primary/10" size={48} />
               
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center gap-4 mb-8">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-3xl">
                   {testimonial.image}
                 </div>
@@ -80,13 +81,13 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="fill-secondary text-secondary" size={18} />
                 ))}
               </div>
 
-              <p className="text-muted-foreground leading-relaxed italic">
+              <p className="text-muted-foreground leading-relaxed text-lg italic">
                 "{testimonial.text}"
               </p>
             </div>
@@ -94,20 +95,32 @@ const Testimonials = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-16 grid md:grid-cols-3 gap-8">
-          <div className="bg-primary text-primary-foreground rounded-3xl p-8 text-center shadow-primary">
-            <div className="text-5xl font-bold mb-2">500+</div>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-primary text-primary-foreground rounded-[1.5rem] p-12 text-center shadow-float">
+            <div className="font-display text-6xl font-bold mb-3">500+</div>
             <div className="text-xl opacity-90">Successful Graduates</div>
           </div>
-          <div className="bg-secondary text-secondary-foreground rounded-3xl p-8 text-center shadow-medium">
-            <div className="text-5xl font-bold mb-2">98%</div>
+          <div className="bg-secondary text-secondary-foreground rounded-[1.5rem] p-12 text-center shadow-float">
+            <div className="font-display text-6xl font-bold mb-3">98%</div>
             <div className="text-xl">Parent Satisfaction</div>
           </div>
-          <div className="bg-primary text-primary-foreground rounded-3xl p-8 text-center shadow-primary">
-            <div className="text-5xl font-bold mb-2">15+</div>
+          <div className="bg-primary text-primary-foreground rounded-[1.5rem] p-12 text-center shadow-float">
+            <div className="font-display text-6xl font-bold mb-3">15+</div>
             <div className="text-xl opacity-90">Years of Excellence</div>
           </div>
         </div>
+      </div>
+
+      {/* Wave divider */}
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-background">
+        <svg
+          className="absolute bottom-0 w-full h-24 text-muted"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 54"
+          fill="currentColor"
+        >
+          <path d="M0,0 C240,40 480,40 720,20 C960,0 1200,0 1440,20 L1440,54 L0,54 Z" />
+        </svg>
       </div>
     </section>
   );

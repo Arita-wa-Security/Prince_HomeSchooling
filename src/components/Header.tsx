@@ -14,124 +14,115 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border shadow-soft">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-lg border-b border-border/50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
-              <span className="text-2xl text-primary-foreground font-bold">B</span>
+          <button 
+            onClick={() => scrollToSection("home")}
+            className="flex items-center space-x-3 transition-transform hover:scale-105"
+          >
+            <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-soft">
+              <span className="text-2xl text-primary-foreground font-display font-bold">B</span>
             </div>
-            <span className="text-2xl font-bold text-foreground">
+            <span className="font-display text-2xl lg:text-3xl font-bold text-foreground">
               BrightPath <span className="text-primary">Homeschool</span>
             </span>
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-10">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-foreground hover:text-primary transition-colors font-semibold"
+              className="text-foreground hover:text-primary transition-colors font-semibold text-lg"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-foreground hover:text-primary transition-colors font-semibold"
+              className="text-foreground hover:text-primary transition-colors font-semibold text-lg"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("programs")}
-              className="text-foreground hover:text-primary transition-colors font-semibold"
+              className="text-foreground hover:text-primary transition-colors font-semibold text-lg"
             >
               Programs
             </button>
             <button
               onClick={() => scrollToSection("how-it-works")}
-              className="text-foreground hover:text-primary transition-colors font-semibold"
+              className="text-foreground hover:text-primary transition-colors font-semibold text-lg"
             >
               How It Works
             </button>
             <button
               onClick={() => scrollToSection("testimonials")}
-              className="text-foreground hover:text-primary transition-colors font-semibold"
+              className="text-foreground hover:text-primary transition-colors font-semibold text-lg"
             >
               Testimonials
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-foreground hover:text-primary transition-colors font-semibold"
-            >
-              Contact
             </button>
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Button
               size="lg"
               onClick={() => scrollToSection("contact")}
-              className="bg-secondary hover:bg-secondary-hover text-secondary-foreground font-bold shadow-medium"
+              className="text-lg px-8 shadow-soft hover:shadow-medium transition-all duration-300"
             >
-              Join Our Family
+              Get Started
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="lg:hidden text-foreground p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            {mobileMenuOpen ? <X size={32} /> : <Menu size={32} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden pb-6 space-y-4">
+          <div className="lg:hidden pb-8 space-y-6 animate-fade-in">
             <button
               onClick={() => scrollToSection("home")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors font-semibold"
+              className="block w-full text-left py-3 text-foreground hover:text-primary transition-colors font-semibold text-lg"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors font-semibold"
+              className="block w-full text-left py-3 text-foreground hover:text-primary transition-colors font-semibold text-lg"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("programs")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors font-semibold"
+              className="block w-full text-left py-3 text-foreground hover:text-primary transition-colors font-semibold text-lg"
             >
               Programs
             </button>
             <button
               onClick={() => scrollToSection("how-it-works")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors font-semibold"
+              className="block w-full text-left py-3 text-foreground hover:text-primary transition-colors font-semibold text-lg"
             >
               How It Works
             </button>
             <button
               onClick={() => scrollToSection("testimonials")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors font-semibold"
+              className="block w-full text-left py-3 text-foreground hover:text-primary transition-colors font-semibold text-lg"
             >
               Testimonials
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors font-semibold"
-            >
-              Contact
             </button>
             <Button
               size="lg"
               onClick={() => scrollToSection("contact")}
-              className="w-full bg-secondary hover:bg-secondary-hover text-secondary-foreground font-bold"
+              className="w-full text-lg py-6"
             >
-              Join Our Family
+              Get Started
             </Button>
           </div>
         )}

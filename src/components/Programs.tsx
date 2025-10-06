@@ -52,50 +52,52 @@ const Programs = () => {
   };
 
   return (
-    <section id="programs" className="py-24 bg-muted">
+    <section id="programs" className="py-32 bg-muted relative">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <div className="inline-block bg-secondary/20 text-secondary-foreground px-4 py-2 rounded-full font-semibold mb-4">
+        <div className="text-center mb-20">
+          <div className="inline-block bg-secondary/20 text-secondary-foreground px-5 py-2.5 rounded-full font-semibold mb-6 text-sm">
             Our Programs
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Learning Paths for Every{" "}
-            <span className="text-gradient-warm">Stage</span>
+          <h2 className="font-display text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+            Learning Paths for
+            <br />
+            Every{" "}
+            <span className="text-gradient-warm italic">Stage</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             From curious beginners to independent learners, we provide age-appropriate
             programs designed to meet your child exactly where they are.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid lg:grid-cols-3 gap-10 mb-16">
           {programs.map((program, index) => (
             <div
               key={index}
-              className="bg-card rounded-3xl overflow-hidden shadow-medium hover:shadow-primary transition-all duration-300 group"
+              className="bg-card rounded-[2rem] overflow-hidden shadow-medium hover:shadow-float transition-all duration-500 group"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-72 overflow-hidden">
                 <img
                   src={program.image}
                   alt={program.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-4 py-2 rounded-full font-bold">
+                <div className="absolute top-6 right-6 bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-bold shadow-medium">
                   {program.age}
                 </div>
               </div>
               
-              <div className="p-8">
-                <h3 className="text-2xl font-bold mb-3">{program.title}</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+              <div className="p-10">
+                <h3 className="font-display text-3xl font-bold mb-4">{program.title}</h3>
+                <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
                   {program.description}
                 </p>
                 
-                <div className="space-y-3 mb-6">
+                <div className="space-y-3 mb-8">
                   {program.features.map((feature, i) => (
-                    <div key={i} className="flex items-center gap-2">
+                    <div key={i} className="flex items-center gap-3">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      <span className="text-sm text-foreground">{feature}</span>
+                      <span className="text-foreground">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -103,7 +105,7 @@ const Programs = () => {
                 <Button
                   onClick={scrollToContact}
                   variant="outline"
-                  className="w-full border-2 border-primary text-primary hover:bg-primary/10 font-semibold"
+                  className="w-full border-2 hover:shadow-soft transition-all duration-300"
                 >
                   Learn More
                   <ArrowRight className="ml-2" size={16} />
@@ -114,19 +116,31 @@ const Programs = () => {
         </div>
 
         {/* Additional Info */}
-        <div className="bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 text-center shadow-primary">
-          <h3 className="text-3xl font-bold mb-4">Not sure which program fits?</h3>
-          <p className="text-xl mb-6 opacity-90">
+        <div className="bg-primary text-primary-foreground rounded-[2rem] p-12 md:p-16 text-center shadow-float">
+          <h3 className="font-display text-4xl lg:text-5xl font-bold mb-6">Not sure which program fits?</h3>
+          <p className="text-xl lg:text-2xl mb-8 opacity-90 max-w-2xl mx-auto">
             Schedule a free consultation with our education specialists to find the perfect path for your child.
           </p>
           <Button
             onClick={scrollToContact}
             size="lg"
-            className="bg-secondary hover:bg-secondary-hover text-secondary-foreground font-bold"
+            className="bg-secondary hover:bg-secondary-hover text-secondary-foreground font-bold text-lg px-10 py-7"
           >
             Schedule Consultation
           </Button>
         </div>
+      </div>
+
+      {/* Wave divider */}
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-background">
+        <svg
+          className="absolute bottom-0 w-full h-24 text-muted"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 54"
+          fill="currentColor"
+        >
+          <path d="M0,0 C240,40 480,40 720,20 C960,0 1200,0 1440,20 L1440,54 L0,54 Z" />
+        </svg>
       </div>
     </section>
   );

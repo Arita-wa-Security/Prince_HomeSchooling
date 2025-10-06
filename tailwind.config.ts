@@ -52,11 +52,13 @@ export default {
       },
       fontFamily: {
         sans: ['Nunito', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Playfair Display', 'Georgia', 'serif'],
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'medium': 'var(--shadow-medium)',
         'primary': 'var(--shadow-primary)',
+        'float': 'var(--shadow-float)',
       },
       borderRadius: {
         lg: "var(--radius)",
