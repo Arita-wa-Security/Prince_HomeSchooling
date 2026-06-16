@@ -23,10 +23,10 @@ const Header = () => {
             className="flex items-center space-x-3 transition-transform hover:scale-105"
           >
             <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-soft">
-              <span className="text-2xl text-primary-foreground font-display font-bold">B</span>
+              <span className="text-2xl text-primary-foreground font-display font-bold"></span>
             </div>
             <span className="font-display text-2xl lg:text-3xl font-bold text-foreground">
-              BrightPath <span className="text-primary">Homeschool</span>
+              Prince <span className="text-primary">Homeschool</span>
             </span>
           </button>
 

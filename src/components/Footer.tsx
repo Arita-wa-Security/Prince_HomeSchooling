@@ -16,9 +16,9 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-soft">
-                <span className="text-2xl text-primary-foreground font-display font-bold">B</span>
+                <span className="text-2xl text-primary-foreground font-display font-bold"></span>
               </div>
-              <span className="font-display text-2xl font-bold">BrightPath</span>
+              <span className="font-display text-2xl font-bold">Prince HomeSchool</span>
             </div>
             <p className="text-background/70 leading-relaxed text-lg">
               Empowering families to create joyful, personalized learning experiences at home.
@@ -97,10 +97,10 @@ const Footer = () => {
                 <Mail size={18} className="flex-shrink-0" />
                 <span>hello@brightpathhomeschool.com</span>
               </li>
-              <li>(555) 123-4567</li>
+              <li>+254 799 186 770</li>
               <li>
-                123 Learning Lane<br />
-                Education City, EC 12345
+                Katani,<br />
+               Machakos
               </li>
             </ul>
           </div>
@@ -110,18 +110,13 @@ const Footer = () => {
         <div className="pt-12 border-t border-background/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-background/60">
-              © {new Date().getFullYear()} BrightPath Homeschool. All rights reserved.
+              © {new Date().getFullYear()} Prince HomeSchool. All rights reserved.
             </p>
             <div className="flex gap-8">
               <a href="#" className="text-background/60 hover:text-primary transition-colors">
-                Privacy Policy
+                Powered by AriLabs
               </a>
-              <a href="#" className="text-background/60 hover:text-primary transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="text-background/60 hover:text-primary transition-colors">
-                Cookie Policy
-              </a>
+              
             </div>
           </div>
         </div>
