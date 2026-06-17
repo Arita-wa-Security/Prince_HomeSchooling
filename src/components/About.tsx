@@ -30,7 +30,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
           <div className="inline-block bg-primary/10 text-primary px-5 py-2.5 rounded-full font-semibold mb-6 text-sm">
-            About BrightPath
+            About Prince Homeschooling
           </div>
           <h2 className="font-display text-5xl lg:text-6xl font-bold mb-8 leading-tight">
             Education That Grows
@@ -39,7 +39,7 @@ const About = () => {
             <span className="text-gradient-primary italic">Family</span>
           </h2>
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            For over 15 years, we've been helping families discover the joy of homeschooling
+            For over 5 years, we've been helping families discover the joy of homeschooling
             through personalized programs that honor each child's unique journey.
           </p>
         </div>
@@ -56,7 +56,7 @@ const About = () => {
           <div className="space-y-8">
             <h3 className="font-display text-4xl font-bold">Our Mission</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At BrightPath Homeschool, we empower families to create rich, joyful learning
+              At Prince Homeschooling, we empower families to create rich, joyful learning
               experiences at home. We believe education should be an adventure that brings
               families closer together while preparing children for a bright future.
             </p>

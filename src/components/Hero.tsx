@@ -30,7 +30,7 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-10 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-5 py-2.5 rounded-full font-semibold text-sm">
-              <Sparkles size={16} />
+              <Sparkles size={10} />
               <span>Personalized Learning for Every Child</span>
             </div>
             
@@ -38,7 +38,7 @@ const Hero = () => {
               Where Learning
               <br />
               Feels Like{" "}
-              <span className="text-gradient-primary italic">Home</span>
+              <span className="text-gradient-primary">Home</span>
             </h1>
             
             <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
@@ -69,11 +69,11 @@ const Hero = () => {
             {/* Trust Indicators */}
             <div className="flex flex-wrap gap-12 justify-center lg:justify-start pt-12">
               <div className="text-center lg:text-left">
-                <div className="text-4xl font-display font-bold text-primary mb-1">500+</div>
+                <div className="text-4xl font-display font-bold text-primary mb-1">100+</div>
                 <div className="text-sm text-muted-foreground">Happy Families</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-4xl font-display font-bold text-primary mb-1">15+</div>
+                <div className="text-4xl font-display font-bold text-primary mb-1">5+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center lg:text-left">
