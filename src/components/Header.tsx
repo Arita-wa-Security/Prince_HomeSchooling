@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import princeLogo from "../assets/prince_logo.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,12 +19,13 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
+          
           <button 
             onClick={() => scrollToSection("home")}
             className="flex items-center space-x-3 transition-transform hover:scale-105"
           >
-            <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-soft">
-              <span className="text-2xl text-primary-foreground font-display font-bold"></span>
+            <div>
+              <span className="text-2xl text-primary-foreground font-display font-bold"><img src={princeLogo} alt="Prince Homeschool" className="h-40 w-40" /></span>
             </div>
             <span className="font-display text-2xl lg:text-3xl font-bold text-foreground">
               Prince <span className="text-primary">Homeschool</span>

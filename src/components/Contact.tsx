@@ -65,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-2">Email Us</h4>
-                  <p className="text-muted-foreground">hello@brightpathhomeschool.com</p>
+                  <p className="text-muted-foreground">princehomeschool@gmail.com</p>
                 </div>
               </div>
 
@@ -75,7 +75,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-2">Call Us</h4>
-                  <p className="text-muted-foreground">(555) 123-4567</p>
+                  <p className="text-muted-foreground">(+254) 799-186770</p>
                   <p className="text-sm text-muted-foreground mt-1">Mon-Fri, 9am-5pm EST</p>
                 </div>
               </div>
@@ -87,8 +87,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-bold text-lg mb-2">Visit Us</h4>
                   <p className="text-muted-foreground">
-                    123 Learning Lane<br />
-                    Education City, EC 12345
+                    Katani Rd<br />
+                    Machakos, Kenya
                   </p>
                 </div>
               </div>
@@ -147,7 +147,7 @@ const Contact = () => {
                   type="tel"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="(555) 123-4567"
+                  placeholder="(+254) 799-186770"
                   className="h-14 text-lg"
                 />
               </div>
@@ -177,7 +177,7 @@ const Contact = () => {
               </Button>
 
               <p className="text-sm text-muted-foreground text-center leading-relaxed">
-                By submitting this form, you agree to be contacted by BrightPath Homeschool
+                By submitting this form, you agree to be contacted by Prince Homeschool
                 regarding your inquiry.
               </p>
             </form>

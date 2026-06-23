@@ -95,12 +95,12 @@ const Footer = () => {
             <ul className="space-y-4 text-background/70 text-lg">
               <li className="flex items-center gap-3">
                 <Mail size={18} className="flex-shrink-0" />
-                <span>hello@brightpathhomeschool.com</span>
+                <span>princehomeschool20@gmail.com</span>
               </li>
               <li>+254 799 186 770</li>
               <li>
-                Katani,<br />
-               Machakos
+                Katani Rd<br />
+                Machakos, Kenya
               </li>
             </ul>
           </div>

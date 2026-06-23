@@ -7,7 +7,7 @@ import middleImage from "@/assets/program-middle.jpg";
 const Programs = () => {
   const programs = [
     {
-      title: "Early Learning",
+      title: "Sign Language",
       age: "Ages 5-7",
       description: "Building foundations through play-based learning, early literacy, math concepts, and social-emotional development in a nurturing environment.",
       image: earlyImage,
@@ -19,7 +19,7 @@ const Programs = () => {
       ],
     },
     {
-      title: "Elementary Years",
+      title: "Music",
       age: "Ages 8-11",
       description: "Developing core academic skills while encouraging curiosity through project-based learning, STEM activities, and creative expression.",
       image: elementaryImage,
@@ -31,7 +31,7 @@ const Programs = () => {
       ],
     },
     {
-      title: "Middle School",
+      title: "Swahili Lessons",
       age: "Ages 12-14",
       description: "Preparing for high school with advanced academics, independent study skills, leadership development, and career exploration.",
       image: middleImage,
