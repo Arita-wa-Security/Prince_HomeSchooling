@@ -1,16 +1,42 @@
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
-import earlyImage from "@/assets/program-early.jpg";
-import elementaryImage from "@/assets/program-elementary.jpg";
-import middleImage from "@/assets/program-middle.jpg";
+import cambridge from "@/assets/cambridge_curriculum.png";
+import cbe from "@/assets/cbe.png";
+import keyboard from "@/assets/girl_keyboard.png";
+import swahili from "@/assets/swahili_kid.png"
+import sign_language from "@/assets/British_Sign_Language_chart.png";
 
 const Programs = () => {
   const programs = [
     {
+      title: "IGCSE Cambridge Curriculum",
+      age: "Ages 1-9",
+      description: "Empowering learners with the globally recognized IGCSE curriculum, inspiring confidence, critical thinking, and academic success.",
+      image: cambridge,
+      features: [
+        "Phonics & early reading skills",
+        "Hands-on math activities",
+        "Creative arts & music",
+        "Nature exploration",
+      ],
+    },
+    {
+      title: "CBE Curriculum",
+      age: "Ages 5-7",
+      description: "Empowering learners to grow, create, and thrive through skills-based, learner-centered education.",
+      image: cbe,
+      features: [
+        "Phonics & early reading skills",
+        "Hands-on math activities",
+        "Creative arts & music",
+        "Nature exploration",
+      ],
+    },
+    {
       title: "Sign Language",
       age: "Ages 5-7",
-      description: "Building foundations through play-based learning, early literacy, math concepts, and social-emotional development in a nurturing environment.",
-      image: earlyImage,
+      description: "Developing communication, confidence, and inclusivity through engaging  Sign Language learning for learners of all ages.",
+      image: sign_language,
       features: [
         "Phonics & early reading skills",
         "Hands-on math activities",
@@ -21,8 +47,8 @@ const Programs = () => {
     {
       title: "Music",
       age: "Ages 8-11",
-      description: "Developing core academic skills while encouraging curiosity through project-based learning, STEM activities, and creative expression.",
-      image: elementaryImage,
+      description: "Inspiring creativity, confidence, and self-expression through engaging music lessons that nurture talent and a lifelong love of learning.",
+      image: keyboard,
       features: [
         "Comprehensive literacy program",
         "Science experiments & discovery",
@@ -33,8 +59,8 @@ const Programs = () => {
     {
       title: "Swahili Lessons",
       age: "Ages 12-14",
-      description: "Preparing for high school with advanced academics, independent study skills, leadership development, and career exploration.",
-      image: middleImage,
+      description: "Elimu ni ufunguo wa maisha — Nurturing curious minds and lifelong learners.",
+      image: swahili,
       features: [
         "Advanced coursework",
         "Research & writing projects",
@@ -80,11 +106,11 @@ const Programs = () => {
                 <img
                   src={program.image}
                   alt={program.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-half h-half object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute top-6 right-6 bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-bold shadow-medium">
+                {/* <div className="absolute top-6 right-6 bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-bold shadow-medium">
                   {program.age}
-                </div>
+                </div> */}
               </div>
               
               <div className="p-10">
