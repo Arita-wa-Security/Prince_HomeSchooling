@@ -25,16 +25,16 @@ const Footer = () => {
               Empowering families to create joyful, personalized learning experiences at home.
             </p>
             <div className="flex gap-4 pt-4">
-              <a href="#" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
+              <a href="https://www.facebook.com/profile.php?id=100083235997163" target="_blank" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
+              <a href="#" target="_blank" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
+              <a href="#" target="_blank" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
+              <a href="#" target="_blank" className="w-12 h-12 bg-background/10 hover:bg-primary rounded-2xl flex items-center justify-center transition-all duration-300">
                 <Youtube size={20} />
               </a>
             </div>
@@ -115,10 +115,9 @@ const Footer = () => {
               © {new Date().getFullYear()} Prince HomeSchool. All rights reserved.
             </p>
             <div className="flex gap-8">
-              <a href="#" className="text-background/60 hover:text-primary transition-colors">
+              <a href="#" target="_blank" className="text-background/60 hover:text-primary transition-colors">
                 Powered by AriLabs
               </a>
-              
             </div>
           </div>
         </div>
