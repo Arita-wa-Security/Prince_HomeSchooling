@@ -65,7 +65,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-2">Email Us</h4>
-                  <p className="text-muted-foreground">princehomeschool@gmail.com</p>
+                  <p className="text-muted-foreground">princehomeschool20@gmail.com</p>
                 </div>
               </div>
 
@@ -88,7 +88,7 @@ const Contact = () => {
                   <h4 className="font-bold text-lg mb-2">Visit Us</h4>
                   <p className="text-muted-foreground">
                     Katani Rd<br />
-                    Machakos, Kenya
+                    Syokimau, Machakos
                   </p>
                 </div>
               </div>

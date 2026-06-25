@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Youtube, Mail } from "lucide-react";
+import princeLogo from "../assets/prince_logo.png"; 
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -15,9 +16,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-soft">
-                <span className="text-2xl text-primary-foreground font-display font-bold"></span>
-              </div>
+              {/* <div>
+              <span className="text-2xl text-primary-foreground font-display font-bold"><img src={princeLogo} alt="Prince Homeschool" className="h-40 w-40" /></span>
+            </div> */}
               <span className="font-display text-2xl font-bold">Prince HomeSchool</span>
             </div>
             <p className="text-background/70 leading-relaxed text-lg">
@@ -82,10 +83,11 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-xl mb-6">Our Programs</h4>
             <ul className="space-y-4 text-lg">
-              <li className="text-background/70">Early Learning (5-7)</li>
-              <li className="text-background/70">Elementary Years (8-11)</li>
-              <li className="text-background/70">Middle School (12-14)</li>
-              <li className="text-background/70">Custom Programs</li>
+              <li className="text-background/70">IGCSE Cambridge</li>
+              <li className="text-background/70">CBE</li>
+              <li className="text-background/70">Sign Language</li>
+              <li className="text-background/70">Music</li>
+              <li className="text-background/70">Swahili</li>
             </ul>
           </div>
 
@@ -100,7 +102,7 @@ const Footer = () => {
               <li>+254 799 186 770</li>
               <li>
                 Katani Rd<br />
-                Machakos, Kenya
+                Syokimau, Machakos
               </li>
             </ul>
           </div>

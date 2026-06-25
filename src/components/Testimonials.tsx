@@ -59,7 +59,7 @@ const Testimonials = () => {
             <span className="text-gradient-warm italic">Community</span>
           </h2>
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Hear from parents who have discovered the joy of homeschooling with BrightPath.
+            Hear from parents who have discovered the joy of homeschooling with Prince HomeSchool.
           </p>
         </div>
 
